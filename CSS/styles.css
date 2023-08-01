@@ -364,10 +364,20 @@ body {
 }
 .social-team {
     display: flex;
+    align-items: center;
     justify-content: center;
     gap: 24px; 
     }
-.icon-item {
+.social-team .icon-item {
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--iriscolor);
+    padding: 11px;
+    border-radius: 50px;
+}   
+.social-footer .icon-item {
     width: 40px;
     height: 40px;  
     border-radius: 50px;
