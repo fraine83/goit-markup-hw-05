@@ -269,9 +269,6 @@ body {
     padding: 60px 0;
     background-color: var(--navyblue);
 }
-.logo-link {
-    margin-bottom: 20px;
-}
 
 .studio-footer {
     color: var(--cloud);
