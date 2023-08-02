@@ -311,21 +311,40 @@ body {
 .footer-address {
     margin: 0px;
 }
-.project-card {
-    flex-basis: calc(100% / 3 - 30px);
-    margin-top: 30px;
-    margin-left: 30px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-            0px 2px 1px rgba(0, 0, 0, 0.12);
-}
 .projects {
     display: flex;
     flex-wrap: wrap;
     margin-top: -30px;
     margin-left: -30px;
 }
-.projects .image {
-    background-color: var();
+.project-card {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.12);       
+}
+.project .name {
+    color: var(--navyblue);
+    margin-bottom: 4px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+}
+
+.project .type {
+    color: var(--slatecolor);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.47;
+}
+
+.substrate {
+    padding: 20px 24px;
+    background-color: var(--whitecolor);
+    border: 1px solid #eeeeee;
+    border-top: 0;
 }
 .social-team .link:hover,
 .social-team .link:focus {
@@ -362,26 +381,6 @@ body {
     padding-top: 0;
 }
 
-.project .name {
-    color: var(--navyblue);
-    margin-bottom: 4px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 2;
-    letter-spacing: 0.04em; 
-}
-.project .type {
-    color: var(--slatecolor);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.47;
-}
-.substrate {
-    padding: 20px 24px;
-    background-color: var(--whitecolor);
-    border: 1px solid #eeeeee;
-    border-top: 0;
-}
 .social-team {
     display: flex;
     align-items: center;
