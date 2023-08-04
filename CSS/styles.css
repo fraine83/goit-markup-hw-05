@@ -12,6 +12,7 @@
     --lightslate: #8E8F99;
     --green: #31d0aa;
     --BG: #d3dbde;
+    --blue: rgb(20,100,255,0.6);
 }
 
 /*CSS RESET*/
@@ -301,7 +302,6 @@ body {
     font-size: 18px;
     line-height: 1.47;  
 }
-   
 
 .project-card:hover,
 .project-card:focus {
@@ -463,6 +463,44 @@ body {
     padding: 60px 0;
     background-color: var(--navyblue);
 }
+.image {
+    display: block;
+    position: relative;
+    width: auto;
+}
+.project {
+    margin: auto;
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: 40px;
+    padding-right: 32px;
+    padding-left: 32px;
+    background-color: var(--blue);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 250ms ease;
+}    
+.text-content {
+    color: var(--cloud);
+    line-height: 1.17em;
+    letter-spacing: 0.04em;
+    margin-top: 20%;
+}
+.project.link:hover .overlay{
+    height: 100%;
+}
+
+    
+    
+    
+    
+
 
 
 
