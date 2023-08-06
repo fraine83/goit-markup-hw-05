@@ -343,7 +343,8 @@ body {
 
 .partners .item:hover,
 .partners .item:focus {   
-    border: 1px solid var(--lightslate);
+    border: 1px solid  var(--iriscolor);
+    border-radius: 4px;
 } 
 
 .container {
