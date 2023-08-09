@@ -14,6 +14,7 @@
     --BG: #d3dbde;
     --blue: rgb(10.9,135.9,235,0.8);
     --black: rgba(0, 0, 0, 0.1);
+    --modalBG: #fcfcfc;
      
 }
 
@@ -523,17 +524,17 @@ body {
     left: 50%;
     min-width: 480px;
     min-height: 584px;
-    background-color: var(--BG);
+    background-color: var(--modalBG);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0);
     border-radius: 4px;
 
-    transform:  translate(-50%, -50%) scale(1);
+    transform:  translate(-50%, -69%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);  
 }
 
 .backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0);
+    transform: translate(-50%, -69%) scale(0);
 }    
 
 .modal-close {
