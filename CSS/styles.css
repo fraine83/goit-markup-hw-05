@@ -97,6 +97,7 @@ body {
     display: block;
     padding-top: 32px;
     padding-bottom: 31px;
+    transition: color 250ms ease-in-out;
 }
 .nav-menu {
     margin-left: 93px;
@@ -109,20 +110,28 @@ body {
     margin-left: auto;
 }
 
-.nav-menu .current {
+.nav-menu .page {
     position: relative;
-    color: var(--oceancolor);
+}
+.page {
+    position: relative;
 }
 
-.nav-menu .page.current::after {
+.nav-menu .page::after {
     content: "";
     position: absolute;
     left: 0;
     height: 4px;
     bottom: -1px;
-    width: 100%;
+    width: 0;
     border-radius: 2px;
+    transition: width 250ms ease-in-out, background-color 250ms ease-in-out,
+                border 250ms ease-in-out;  
+}
+.nav-menu .page.current::after {
+    width: 100%;
     background-color: var(--oceancolor);
+    border: 2px solid var(--oceancolor);
 }
 .nav-menu .page:hover,
 .nav-menu .page:focus,
@@ -131,8 +140,21 @@ body {
 .contacts-menu .contact .link:focus {
     color: var(--iriscolor);
 }
+.nav-menu .page:hover:after,
+.nav-menu .page:focus::after {
+    border: 2px solid var(--oceancolor);
+    background-color: var(--oceancolor);
+    width: 100%;
+}
 .contacts-menu .contact {
     font-weight: 400;
+}
+.menu,
+.navigation,
+.nav-menu,
+.contacts-menu {
+    display: flex;
+    align-items: center;
 }
 .hero {
     background-image: url(../images/Dark-bg.png), url(../images/people-office-1.jpg),
@@ -159,6 +181,7 @@ body {
     font-size: 16px;
     font-family: inherit;
     border-radius: 4px;
+    transition: color 250ms ease-in-out, background-color 250ms ease-in-out, box-shdow 250ms ease-in-out;
 }
 
 .button.primary {
@@ -406,13 +429,6 @@ body {
     width: 1200px; 
     padding: 0 15px;   
     margin: 0 auto;
-}
-.menu,
-.navigation,
-.nav-menu,
-.contacts-menu {
-    display: flex;
-    align-items: center;
 }
 .section {
     padding: 120px 0;
